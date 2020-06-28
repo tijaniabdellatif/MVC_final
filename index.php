@@ -13,7 +13,7 @@ else {
 
 //array contenant toutes les pages
 $allpages = scandir('controllers/');
-var_dump($allpages);
+// var_dump($allpages);
 
 if(in_array($page.'_controller.php',$allpages)){
 

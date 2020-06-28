@@ -10,8 +10,9 @@
 <?php include_once 'views/includes/header.php'; ?>
 
 <body>
-    <h2>First page</h2>
+    <h2>Contact</h2>
 </body>
+
 <?php include_once 'views/includes/footer.php'; ?>
 
 </html>
