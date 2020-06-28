@@ -1,45 +1,43 @@
-<?php 
+<?php
 
-class Categories {
-
+class Categories
+{
 
     public $id;
     public $name;
 
+
     /**
-     * constructor
+     * Categories constructor.
      * @param $id
      */
-
     function __construct($id)
-    { 
-        global $db;
-         
-        $id = str_secur($id);
-        $reqCat = $db->prepare('SELECT * FROM `categories` WHERE id = :id ');
-        $reqCat->bindParam(':id',$id,PDO::PARAM_INT);
-        $reqCat->execute([$id]);
+    {
 
-        $data = $reqCat->fetch();
-        $this->id=$id;
+        global $db;
+
+        $id = str_secur($id);
+
+        $reqCategory = $db->prepare('SELECT * FROM categories WHERE id = ?');
+        $reqCategory->execute([$id]);
+        $data = $reqCategory->fetch();
+
+        $this->id = $id;
         $this->name = $data['name'];
-     
-        
     }
 
+
     /**
-     * 
-     * Envoi de tous les categories
+     * Envoie de toutes les catégories
      * @return array
      */
-
-   static function getAllCat(){
+    static function getAllCategories()
+    {
 
         global $db;
-        $reqCat = $db->prepare('SELECT * FROM `catgories`');
-        $reqCat->execute([]);
-        return $reqCat->fetchAll();
 
-   }
+        $reqCategories = $db->prepare('SELECT * FROM categories');
+        $reqCategories->execute([]);
+        return $reqCategories->fetchAll();
+    }
 }
-

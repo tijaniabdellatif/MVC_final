@@ -3,6 +3,23 @@ include_once '_config/config.php';
 include_once '_config/db.php';
 include_once '_functions/functions.php';
 
+include_once '_classes/Authors.php';
+include_once '_classes/Articles.php';
+include_once '_classes/Categories.php';
+
+// $var = new Authors(1);
+// $var1 = new Categories(1);
+// $var3= new Articles(2);
+// debug($var);
+// debug($var1);
+// debug($var3);
+
+// $test = Categories::getAllCategories();
+// $testp = Authors::getAllAuthors();
+// $testm = Articles::getAllArticles();
+// debug($testm);
+// exit;
+
 // debug(['hello','world']);
 // exit;
 // echo '<h1>hello</h1>';
