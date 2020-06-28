@@ -16,5 +16,7 @@
 <meta property="og:descritpion" content="<?= WEBSITE_FACEBOOK_DESCRIPTION ?>" />
 <meta property="og:image" content="<?= WEBSITE_FACEBOOK_IMAGE ?>" />
 
+<!-- CSS bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--CSS styles-->
-<link rel="stylesheet" href="/assets/styles/css/styles.css" />
+<link rel="stylesheet" href="assets/styles/css/styles.css" />

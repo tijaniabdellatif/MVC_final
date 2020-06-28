@@ -1,4 +1,7 @@
 <?php
+include_once '_config/config.php';
+include_once '_config/db.php';
+var_dump($db);
 
 //definition de la page courante
 if(isset($_GET['page']) AND !empty($_GET['page'])){

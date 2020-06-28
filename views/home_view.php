@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include_once 'views/includes/head.php' ?>
     <title><?= ucfirst($page); ?> - Mon Blog</title>
 </head>
 
@@ -11,7 +10,10 @@
 
 <body>
     <h2>First page</h2>
+    <img src="assets/images/img.jpg" alt="">
 </body>
 <?php include_once 'views/includes/footer.php'; ?>
-
+<!--
+<script src="assets/js/script.js"></script>
+-->
 </html>
