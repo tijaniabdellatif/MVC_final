@@ -1,15 +1,15 @@
-<?php 
-//--------------------------//
-//      SESSIONS           //
-//------------------------//
-session_start();
-ini_set('session.cookie_lifetime',false);
-
+<?php
 //--------------------------//
 //      ERRORS             //
 //------------------------//
 error_reporting(E_ALL);
-ini_set('display_errors',true);
+ini_set('display_errors', true);
+
+//--------------------------//
+//      SESSIONS           //
+//------------------------//
+ini_set('session.cookie_lifetime',false);
+session_start();
 
 //--------------------------//
 //      Constants           //
@@ -38,7 +38,7 @@ define("WEBSITE_FACEBOOK_IMAGE", "");
 
 //db informations
 define("DB_HOST", "localhost");
-define("DB_NAME", "test");
+define("DB_NAME", "blog_mvc");
 define("DB_USER", "root");
 define("DB_PASS", "");
 
