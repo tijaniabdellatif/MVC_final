@@ -2,12 +2,9 @@
 
 class Authors
 {
-
     public $id;
     public $firstname;
     public $lastname;
-
-
     /**
      * Authors constructor.
      * @param $id
