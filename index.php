@@ -32,9 +32,18 @@ include_once '_classes/Categories.php';
 //definition de la page courante
 if(isset($_GET['page']) AND !empty($_GET['page'])){
    $page = trim(strtolower($_GET['page'])); //HOME
+
 }
 else {
 $page = 'home';
+}
+
+if($_GET['page']== 'home'){
+    $message = "welcome";
+}
+else{
+
+    $message= "Get in touch";
 }
 
 //array contenant toutes les pages

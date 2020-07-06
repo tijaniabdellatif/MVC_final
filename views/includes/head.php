@@ -21,3 +21,5 @@
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles/css/bootstrap.css" />
 <link rel="stylesheet" href="assets/styles/css/styles.css" />
+
+<script src="assets/js/script.js"></script>
