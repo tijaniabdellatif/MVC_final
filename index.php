@@ -1,12 +1,13 @@
 <?php
+include_once '_functions/functions.php';
 include_once '_config/config.php';
 include_once '_config/db.php';
-include_once '_functions/functions.php';
 
 include_once '_classes/Authors.php';
 include_once '_classes/Articles.php';
 include_once '_classes/Categories.php';
 include_once '_classes/AutoLoader.php';
+
 Autoloader::register();
 
 // $var = new Authors(1);
