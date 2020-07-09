@@ -6,6 +6,9 @@ include_once '_functions/functions.php';
 include_once '_classes/Authors.php';
 include_once '_classes/Articles.php';
 include_once '_classes/Categories.php';
+include_once '_classes/AutoLoader.php';
+Autoloader::register();
+
 // $var = new Authors(1);
 // $var1 = new Categories(1);
 // $var3= new Articles(2);
@@ -28,6 +31,33 @@ include_once '_classes/Categories.php';
 // debug($_GET);
 // //on test sur l'url /contact?action=send
 // exit;
+
+
+/**
+ * 
+ * AutoLoader des classes 
+ */
+
+ //creation d'un fonction anonyme autoload
+//  spl_autoload_register(function ($class){
+
+//     include_once '_classes/' . $class . '.php';
+
+
+//  });
+
+
+ // test if function exist 
+//  if(function_exists('__autoload')){
+
+//     echo 'ok exit';
+//  }
+// //   //la mauvaise maniere and deprecated reecrire la fonction autolaad
+// //  function __autoload($class){
+   
+//     include_once '_classes/'.$class.'.php';
+
+//  }
 
 //definition de la page courante
 if(isset($_GET['page']) AND !empty($_GET['page'])){

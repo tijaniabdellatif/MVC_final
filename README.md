@@ -23,3 +23,5 @@ sur la commande line :
 ==> gem update --system 
 ==> gem install compass
 ==> compass create
+
+==> autoloading de la classe
