@@ -12,6 +12,8 @@
     <div class="container">
         <?php include_once 'views/includes/header.php'; ?>
 
+        <h1><?= $lang->header->header ?></h1>
+
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
                 <?php
@@ -73,7 +75,7 @@
         <div class="row">
             <div class="col-md-8 blog-main">
                 <h3 class="pb-4 mb-4 font-italic border-bottom">
-                    From the Firehose
+                   A la Une
                 </h3>
 
 

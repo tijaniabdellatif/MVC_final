@@ -46,4 +46,8 @@ define("DB_USER", "root");
 define("DB_PASS", "");
 
 
+//language 
+define("DEFAULT_LANGUAGE","en");
+
+
 

@@ -25,3 +25,4 @@ sur la commande line :
 ==> compass create
 
 ==> autoloading de la classe
+==> systeme multi-langue
